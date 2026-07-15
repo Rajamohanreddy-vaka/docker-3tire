@@ -1,4 +1,6 @@
-const API_URL = 'http://backend:5000/api/tasks';
+// Automatically detects the public IP or domain of the host machine
+const HOST_IP = window.location.hostname;
+const API_URL = `http://${HOST_IP}:5000/api/tasks`;
 
 async function fetchTasks() {
     try {
@@ -33,4 +35,5 @@ async function addTask() {
     }
 }
 
+// Initial Load
 fetchTasks();
