@@ -29,4 +29,20 @@ docker compose version
 ```
 ---
 
-## Testing the Application
+## How to Run The Application
+```bash
+##Clone the Repo to you system and go to the directory.
+git clone https://github.com/Rajamohanreddy-vaka/docker-3tier
+cd docker-3tier
+
+##Run the docker compose.
+docker compose up -d
+
+##Validate whether the containers running or not.
+docker compose ps
+
+#If everything is running try to hit the docker host ip on port no 80.
+
+
+
+
